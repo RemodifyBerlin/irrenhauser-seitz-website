@@ -916,10 +916,10 @@
           });
         });
 
-        /* Each entry slides in from the right */
+        /* Each entry fades in from below */
         tlEntries.forEach(function (entry) {
           gsap.from(entry, {
-            x: 30, opacity: 0, duration: 0.6, ease: 'power3.out',
+            y: 24, opacity: 0, duration: 0.6, ease: 'power3.out',
             scrollTrigger: { trigger: entry, start: 'top 70%', once: true }
           });
         });
